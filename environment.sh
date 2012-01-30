@@ -9,7 +9,7 @@ export BUILD_TYPE=Release
 # Get the Python version as "pythonx.y", e.g. "python2.6"
 PYTHONXY=`python -V 2>&1 | sed -e 's/Python 2\.\([0-9]*\).*/python2.\1/'`
 
-export PYSIDESANDBOXPATH=$HOME/pkg/pyside-sandbox
+export PYSIDESANDBOXPATH=/usr
 export PATH=$PYSIDESANDBOXPATH/bin:$PATH
 export PYTHONPATH=$PYSIDESANDBOXPATH/lib/$PYTHONXY/site-packages:$PYSIDESANDBOXPATH/lib64/$PYTHONXY/site-packages:$PYTHONPATH
 export LD_LIBRARY_PATH=$PYSIDESANDBOXPATH/lib:$LD_LIBRARY_PATH
